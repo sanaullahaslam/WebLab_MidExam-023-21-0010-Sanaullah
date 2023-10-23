@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F5F5;
+        }
+
+        .main-header {
+            background-color: #17194B;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav li {
+            margin-right: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            color: #3199FE;
+        }
+
+        .sign-in-button {
+            background-color: #3199FE;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .sign-in-button:hover {
+            background-color: #1F65C4;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 50px;
+        }
+
+        .text-section {
+            flex: 1;
+        }
+
+        .text-section h1 {
+            font-size: 24px;
+            color: #17194B;
+        }
+
+        .image-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery-section {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-images {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gallery-images img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .cta-section {
+            background-color: #F5F5F5;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cta-section .text-section {
+            flex: 1;
+        }
+
+        .cta-section .button-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .get-started-button {
+            background-color: #3199FE;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .get-started-button:hover {
+            background-color: #1F65C4;
+        }
+
+        .features-section {
+            background-color: #000000;
+            color: white;
+            padding: 80px;
+            height: 500px;
+        }
+
+        .features-section h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .feature-boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+           
+        }
+
+        .feature-box {
+            background-color: #3199FE;
+            padding: 20px;
+            color: white;
+            height: 200px;
+        }
+
+        .contact-section {
+            background-color: #FFFFFF;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .contact-section .left-section {
+            flex: 1;
+            color: #000000;
+        }
+
+        .contact-section .right-section {
+            flex: 1;
+            text-align: right;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #CCCCCC;
+            border-radius: 10px;
+        }
+
+        textarea {
+            height: 130px;
+        }
+
+        .submit-button {
+            background-color: #3199FE;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .submit-button:hover {
+            background-color: #1F65C4;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="assets/logo.PNG" alt="Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" class="sign-in-button">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="text-section">
+            <h1>Unlocking Secure Connections<br>Beyond Email<br>and Phone</h1>
+        </div>
+        <div class="image-section">
+            <img src="assets/img1.PNG" alt="Image">
+        </div>
+    </div>
+
+    <div class="gallery-section">
+        <div class="gallery-images">
+            <img src="assets/1.PNG" alt="Image 1">
+            <img src="assets/2.PNG" alt="Image 2">
+            <img src="assets/3.PNG" alt="Image 3">
+            <img src="assets/4.PNG" alt="Image 4">
+            <img src="assets/5.PNG" alt="Image 5">
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="text-section">
+            <h1>Want your peers to engage with each other?</h1>
+        </div>
+        <div class="button-section">
+            <a href="#" class="get-started-button">Get Started</a>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <h2>Features:</h2>
+        <div class="feature-boxes">
+            <div class="feature-box">
+                <h1>Track Peers Communication</h1>
+            </div>
+            <div class="feature-box">
+                <h1>Get Alert for harmful communication</h1>
+            </div>
+            <div class="feature-box">
+                <h1>Track sentiments of communication</h1>
+            </div>
+            <div class="feature-box">
+                <h1>Data Analysis</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="left-section">
+            <h2>Contact Now</h2>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Sanaullah" style="width: 400px;">
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="text" id="contactNumber" placeholder="Your contact number" style="width: 400px;">
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" style="width: 480px;">
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <input type="email" id="email" placeholder="Comments" style="width: 480px;">
+            </div>
+            <a href="#" class="submit-button" id="submitButton">Submit Request</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>All rights are reserved by @SukkurIBAUniversity 2023</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            var fullName = document.getElementById('fullName').value;
+            var contactNumber = document.getElementById('contactNumber').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+
+            console.log('Full Name:', fullName);
+            console.log('Contact Number:', contactNumber);
+            console.log('Email:', email);
+            console.log('Comment:', comment);
+        });
+    </script>
+</body>
+</html>
